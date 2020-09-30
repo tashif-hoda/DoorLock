@@ -1,0 +1,8 @@
+--cpu ARM7TDMI
+".\rtx_config.o"
+".\startup.o"
+".\lcd_message.o"
+--library_type=microlib --strict --scatter ".\Door Security System.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Door Security System.map" -o ".\Door Security System.axf"

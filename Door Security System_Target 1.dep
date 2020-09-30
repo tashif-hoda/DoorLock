@@ -1,0 +1,12 @@
+Dependencies for Project 'Door Security System', Target 'Target 1': (DO NOT MODIFY !)
+F (.\startup+config file\RTX_Config.c)(0x57ECDFD6)(-c --cpu ARM7TDMI -D__RTX -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork -I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\Philips-o .\rtx_config.o --omf_browse .\rtx_config.crf --depend .\rtx_config.d)
+I (D:\Keil\ARM\RV31\INC\RTL.h)(0x532C1630)
+I (D:\Keil\ARM\Inc\Philips\LPC21xx.H)(0x532C1500)
+I (D:\Keil\ARM\RV31\INC\RTX_lib.c)(0x532C1630)
+F (.\startup+config file\Startup.s)(0x57ECD286)(--cpu ARM7TDMI --pd "__RTX SETA 1" --pd "__EVAL SETA 1" -g --apcs=interwork --pd "__MICROLIB SETA 1"-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\Philips--list .\startup.lst --xref -o .\startup.o --depend .\startup.d)
+F (.\startup+config file\SWI_Table.s)(0x5DD71549)(--cpu ARM7TDMI --pd "__RTX SETA 1" --pd "__EVAL SETA 1" -g --apcs=interwork --pd "__MICROLIB SETA 1"-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\Philips--list .\swi_table.lst --xref -o .\swi_table.o --depend .\swi_table.d)
+F (.\osfinalunopti.c)(0x5DD785E8)(-c --cpu ARM7TDMI -D__RTX -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork -I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\Philips-o .\osfinalunopti.o --omf_browse .\osfinalunopti.crf --depend .\osfinalunopti.d)
+I (D:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7E87C)
+I (D:\Keil\ARM\RV31\INC\rtl.h)(0x532C1630)
+I (D:\Keil\ARM\Inc\Philips\lpc21xx.h)(0x532C1500)
+I (D:\Keil\ARM\ARMCC\include\string.h)(0x51C7E87C)

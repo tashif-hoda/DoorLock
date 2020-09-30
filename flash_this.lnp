@@ -1,0 +1,10 @@
+--cpu ARM7TDMI
+".\rtx_config.o"
+".\startup.o"
+".\swi_table.o"
+".\osfinalunopti.o"
+D:\Keil\ARM\RV31\LIB\RTX_ARM_L.LIB
+--library_type=microlib --strict --scatter ".\flash_this.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\flash_this.map" -o .\flash_this.axf

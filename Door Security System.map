@@ -1,0 +1,79 @@
+ARM Linker, 5.03 [Build 76] [MDK-ARM Lite]
+
+==============================================================================
+
+Section Cross References
+
+    rtx_config.o(.text) refers to rtx_config.o(.text) for os_def_interrupt
+    startup.o(RESET) refers to startup.o(STACK) for Stack_Top
+    startup.o(RESET) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    lcd_message.o(.text) refers to lcd_message.o(.bss) for MsgBox
+    lcd_message.o(.text) refers to lcd_message.o(.data) for rec
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry10a.o(.ARM.Collect$$$$0000000D) for __rt_final_cpp
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry11a.o(.ARM.Collect$$$$0000000F) for __rt_final_exit
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry7b.o(.ARM.Collect$$$$00000008) for _main_clock
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry8b.o(.ARM.Collect$$$$0000000A) for _main_cpp_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry9a.o(.ARM.Collect$$$$0000000B) for _main_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry5.o(.ARM.Collect$$$$00000004) for _main_scatterload
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry2.o(.ARM.Collect$$$$00000001) for _main_stk
+    entry2.o(.ARM.Collect$$$$00000001) refers to entry2.o(.ARM.Collect$$$$00002712) for __lit__00000000
+    entry2.o(.ARM.Collect$$$$00002712) refers to startup.o(STACK) for __initial_sp
+    entry5.o(.ARM.Collect$$$$00000004) refers to init.o(.text) for __scatterload
+    entry9a.o(.ARM.Collect$$$$0000000B) refers to lcd_message.o(.text) for main
+    entry9b.o(.ARM.Collect$$$$0000000C) refers to lcd_message.o(.text) for main
+    init.o(.text) refers to init.o(i.__ARM_common_call_via_r3) for __ARM_common_call_via_r3
+    init.o(.text) refers to entry5.o(.ARM.Collect$$$$00000004) for __main_after_scatterload
+
+
+==============================================================================
+
+Removing Unused input sections from the image.
+
+    Removing rtx_config.o(.text), (40 bytes).
+    Removing rtx_config.o(.text), (128 bytes).
+    Removing rtx_config.o(.bss), (1924 bytes).
+    Removing rtx_config.o(.data), (4 bytes).
+    Removing startup.o(HEAP), (0 bytes).
+
+5 unused section(s) (total 2096 bytes) removed from the image.
+
+==============================================================================
+
+Memory Map of the image
+
+  Image Entry point : 0x00000000
+
+  Load Region LR_IROM1 (Base: 0x00000000, Size: 0x000002c8, Max: 0x00080000, ABSOLUTE)
+
+    Execution Region ER_IROM1 (Base: 0x00000000, Size: 0x000002b8, Max: 0x00080000, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x00000000   0x00000104   Code   RO           37    RESET               startup.o
+    0x00000104   0x00000000   Code   RO           70  * .ARM.Collect$$$$00000000  mc_t.l(entry.o)
+    0x00000104   0x00000004   Code   RO           73    .ARM.Collect$$$$00000001  mc_t.l(entry2.o)
+    0x00000108   0x00000004   Code   RO           75    .ARM.Collect$$$$00000004  mc_t.l(entry5.o)
+    0x0000010c   0x00000000   Code   RO           77    .ARM.Collect$$$$00000008  mc_t.l(entry7b.o)
+    0x0000010c   0x00000000   Code   RO           79    .ARM.Collect$$$$0000000A  mc_t.l(entry8b.o)
+    0x0000010c   0x0000000c   Code   RO           80    .ARM.Collect$$$$0000000B  mc_t.l(entry9a.o)
+    0x00000118   0x00000000   Code   RO           82    .ARM.Collect$$$$0000000D  mc_t.l(entry10a.o)
+    0x00000118   0x00000000   Code   RO           84    .ARM.Collect$$$$0000000F  mc_t.l(entry11a.o)
+    0x00000118   0x00000004   Code   RO           74    .ARM.Collect$$$$00002712  mc_t.l(entry2.o)
+    0x0000011c   0x00000158   Code   RO           41    .text               lcd_message.o
+    0x00000274   0x00000020   Code   RO           86    .text               mc_t.l(init.o)
+    0x00000294   0x00000002   Code   RO           88    i.__ARM_common_call_via_r3  mc_t.l(init.o)
+    0x00000296   0x00000002   PAD
+    0x00000298   0x00000020   Data   RO            4    .constdata          rtx_config.o
+    0x000002b8   0x00000000   Data   RO           90    Region$$Table       anon$$obj.o
+
+
+    Execution Region RW_IRAM1 (Base: 0x40000000, Size: 0x000003b0, Max: 0x00008000, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x40000000   0x0000000e   Data   RW           43    .data               lcd_message.o
+    0x4000000e   0x00000002   PAD
+    0x40000010   0x000002ec   Zero   RW           42    .bss                lcd_message.o
+    0x400002fc   0x00000004   PAD
+    0x40000300   0x000000b0   Zero   RW           35    STACK               startup.o
+
